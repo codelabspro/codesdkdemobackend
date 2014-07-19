@@ -1,4 +1,4 @@
-package com.google.cloud.backend.sample.guestbook;
+package com.codesdk.cloud.backend.sample.guestbook;
 
 /**
  * Listener used by the introductory Fragments to interact with each other and

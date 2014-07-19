@@ -1,4 +1,4 @@
-package com.google.cloud.backend;
+package com.codesdk.cloud.backend;
 
 import android.app.Activity;
 import android.content.ComponentName;

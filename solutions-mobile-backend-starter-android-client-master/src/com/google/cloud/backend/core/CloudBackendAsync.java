@@ -14,8 +14,8 @@
 
 package com.google.cloud.backend.core;
 
+import com.codesdk.cloud.backend.GCMIntentService;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
-import com.google.cloud.backend.GCMIntentService;
 import com.google.cloud.backend.core.CloudQuery.Order;
 import com.google.cloud.backend.core.CloudQuery.Scope;
 

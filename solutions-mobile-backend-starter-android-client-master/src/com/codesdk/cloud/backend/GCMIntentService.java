@@ -12,11 +12,11 @@
  * the License.
  */
 
-package com.google.cloud.backend;
+package com.codesdk.cloud.backend;
 
+import com.codesdk.cloud.backend.sample.guestbook.GuestbookActivity;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.google.cloud.backend.core.Consts;
-import com.google.cloud.backend.sample.guestbook.GuestbookActivity;
 
 import android.app.Application;
 import android.app.IntentService;

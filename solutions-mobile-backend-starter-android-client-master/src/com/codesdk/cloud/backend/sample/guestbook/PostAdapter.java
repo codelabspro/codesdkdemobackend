@@ -1,6 +1,6 @@
-package com.google.cloud.backend.sample.guestbook;
+package com.codesdk.cloud.backend.sample.guestbook;
 
-import com.google.cloud.backend.R;
+import com.codesdk.cloud.backend.R;
 import com.google.cloud.backend.core.CloudEntity;
 
 import android.content.Context;

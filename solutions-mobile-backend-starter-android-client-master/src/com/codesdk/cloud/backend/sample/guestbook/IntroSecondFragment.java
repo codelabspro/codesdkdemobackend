@@ -1,6 +1,6 @@
-package com.google.cloud.backend.sample.guestbook;
+package com.codesdk.cloud.backend.sample.guestbook;
 
-import com.google.cloud.backend.R;
+import com.codesdk.cloud.backend.R;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -12,13 +12,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 /**
- * This Fragment shows the first screen of the Guestbook introduction.
+ * This Fragment shows the second screen of the Guestbook introduction.
  */
-public class IntroFirstFragment extends Fragment implements OnClickListener {
+public class IntroSecondFragment extends Fragment implements OnClickListener {
 
-    public static final String TAG = "FIRST";
+    public static final String TAG = "SECOND";
 
     private OnIntroNavListener mCallback;
+    private ImageView mPrevBtn;
     private ImageView mNextBtn;
 
     @Override
@@ -37,9 +38,11 @@ public class IntroFirstFragment extends Fragment implements OnClickListener {
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_intro_first, container, false);
+        View v = inflater.inflate(R.layout.fragment_intro_second, container, false);
 
-        mNextBtn = (ImageView) v.findViewById(R.id.intro_1_next_btn);
+        mPrevBtn = (ImageView) v.findViewById(R.id.intro_2_prev_btn);
+        mPrevBtn.setOnClickListener(this);
+        mNextBtn = (ImageView) v.findViewById(R.id.intro_2_next_btn);
         mNextBtn.setOnClickListener(this);
         return v;
     }
@@ -47,8 +50,11 @@ public class IntroFirstFragment extends Fragment implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.intro_1_next_btn:
-                mCallback.toSecond(TAG);
+            case R.id.intro_2_prev_btn:
+                mCallback.toFirst(TAG);
+                break;
+            case R.id.intro_2_next_btn:
+                mCallback.toThird(TAG);
                 break;
         }
     }

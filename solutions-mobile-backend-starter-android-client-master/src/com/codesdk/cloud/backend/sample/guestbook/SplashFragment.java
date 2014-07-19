@@ -1,6 +1,6 @@
-package com.google.cloud.backend.sample.guestbook;
+package com.codesdk.cloud.backend.sample.guestbook;
 
-import com.google.cloud.backend.R;
+import com.codesdk.cloud.backend.R;
 
 import android.app.Fragment;
 import android.os.Bundle;

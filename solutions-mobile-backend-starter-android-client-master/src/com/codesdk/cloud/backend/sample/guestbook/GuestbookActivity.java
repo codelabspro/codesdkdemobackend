@@ -12,9 +12,9 @@
  * the License.
  */
 
-package com.google.cloud.backend.sample.guestbook;
+package com.codesdk.cloud.backend.sample.guestbook;
 
-import com.google.cloud.backend.R;
+import com.codesdk.cloud.backend.R;
 import com.google.cloud.backend.core.CloudBackendFragment;
 import com.google.cloud.backend.core.CloudBackendFragment.OnListener;
 import com.google.cloud.backend.core.CloudCallbackHandler;
