@@ -23,11 +23,13 @@ public interface Consts {
     /**
      * Set Project ID of your Google APIs Console Project.
      */
+	public static final String PROJECT_ID = "bamboo-volt-645";
     // public static final String PROJECT_ID = "*** ENTER YOUR PROJECT ID ***";
 
     /**
      * Set Project Number of your Google APIs Console Project.
      */
+	public static final String PROJECT_NUMBER = "606698215252";
     // public static final String PROJECT_NUMBER = "*** ENTER YOUR PROJECT NUMBER ***";
 
     /**

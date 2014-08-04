@@ -90,7 +90,10 @@ public class GCMIntentService extends IntentService {
         }
         // Release the wake lock provided by the WakefulBroadcastReceiver.
         GCMBroadcastReceiver.completeWakefulIntent(intent);
-        sendNotification("Received: " + extras.toString());
+        
+        String mes = extras.getString("title");
+        
+        sendNotification("Received: " + mes);
 
     }
 
